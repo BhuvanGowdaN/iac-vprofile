@@ -1,16 +1,17 @@
-name: "Vprofile IAC"
+name: "vprofile IAC"
 on:
   push:
     branches:
-      - '**'
-    paths:  
-      - terraform/**
-on:  
+      -main
+      -stage
+    paths:
+      -terraform/**
   pull_request:
     branches:
-      - '**'
+      -main
+      -stage
     paths:
-      - terraform/**
+      -terraform/**
 
 env:
  # Credentials for deployment to AWS
