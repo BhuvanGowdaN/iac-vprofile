@@ -23,7 +23,7 @@ env:
  # S3 bucket for the Terraform state
  BUCKET_TF_STATE: ${{ secrets.BUCKET_TF_STATE}}
  AWS_REGION: us-east-1
- EKS_CLUSTER: vproapp11-eks
+ EKS_CLUSTER: vproapp123
 
 jobs:
    terraform:
